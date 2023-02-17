@@ -1,22 +1,65 @@
 /*Alap beállítások, módosíthatóak*/
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Rajdhani;
+    color: white;
     font-size: 20px;
-    background-color: rgb(224, 64, 64);
+    background-color: rgb(56, 56, 56);
+    margin: 0;
+}
+header h1 {
+    padding-left: 20px;
 }
 nav ul {
     list-style-type: none;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
     text-align: center;
 }
 nav{
-    border: 2px solid black;
-    margin: 20px;
+    background-color: rgb(37, 37, 37);
+    padding: 5px;
 }
 nav a{
     text-decoration: none;
+    color: rgb(179, 179, 179);
+    padding: 20px;
+    transition: all .5s ease-in-out;
 }
-a:hover{
-    color: red;
+nav a:hover{
+    color: black;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.541));
+    border-bottom: 1px solid white ;
+}
+article {
+    width: 60%;
+    margin: auto;
+}
+fieldset {
+    background-color: rgb(70, 70, 70);
+    border-radius: 20px;
+    border: none;
+    flex-direction: column;
+    display: flex;
+}
+legend {
+    padding-left: 25px;
+}
+input {
+    align-self: center;
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}
+input:hover {
+    background-color: rgb(190, 190, 190);
+}
+.button {
+    margin: 20px;
+    border: none;
+    transition: all .3s ease-in-out;
+}
+.button:hover {
+    background-color: black;
+    color: whitesmoke;
 }
