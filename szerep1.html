@@ -10,111 +10,129 @@
 <body>
     <main>
         <header>
-            <h1>CÍM2</h1>
+            <h1>Quíz</h1>
         </header>
         <nav>
             <ul>
                 <li><a href="index.html">Főoldal</a></li>
-                <li><a href="szerep1.html">Quiz kérdések</a></li>
+                <li><a href="szerep1.html">Quíz</a></li>
                 <li><a href="szerep2.html">2.oldal</a></li>
                 <li><a href="szerep3.html">3.oldal</a></li>
                 <li><a href="szerep4.html">4.oldal</a></li>
             </ul>
         </nav>
         <article>
-            <h2>Kérdőív</h2>
-            <fieldset>
-                <legend>Kérlek szánj időt a kérdőívünkre</legend>
-                <label for="vNev">Vezetéknév: </label>
-                <input type="text" id="vNev" name="vezetekNev"  placeholder="Családneved"> <br>
-                <label for="kNev">keresztknév: </label>
-                <input type="text" id="kNev" name="keresztNev" placeholder="Keresztneved"> 
-                <br>
-                <label for="start">Nem: </label>
-                <br>
-                <label for="ferfi">Férfi: </label>
-                <input type="radio" >
-                <br>
-                <label for="no">Nő: </label>
-                <input type="radio"  >
-                <br>
-                <label for="szul">Születési időt: </label>
-                <input type="date">
-                <br>
-                <label for="email">Email: </label>
-                <input type="email">
-            </fieldset>
-
-            <fieldset>
-                <legend>1. kérdés</legend>
-                <label for="robot">Robot vagy?</label>
-                <br>
-                <label for="igen">Igen</label>
-                <input type="radio">
-                <br>
-                <label for="nem">Nem</label>
-                <input type="radio">
-                <br>
-                <label for="talan">Talán</label>
-                <input type="radio">
-
-            </fieldset>
-
-            <fieldset>
-                <legend>2. kérdés</legend>  
-                <label for="robot">Robot vagy?</label>
-                <br>
-                <label for="igen">Igen</label>
-                <input type="radio">
-                <br>
-                <label for="nem">Nem</label>
-                <input type="radio">
-                <br>
-                <label for="talan">Talán</label>
-                <input type="radio">
-            </fieldset>
-
-            <fieldset>
-                <legend>3. kérdés</legend>
-                <label for="robot">Robot vagy?</label>
-                <br>
-                <label for="igen">Igen</label>
-                <input type="radio">
-                <br>
-                <label for="nem">Nem</label>
-                <input type="radio">
-                <br>
-                <label for="talan">Talán</label>
-                <input type="radio">
-            </fieldset>
             
             <fieldset>
-                <legend>3. kérdés</legend>
-                <label for="robot">Robot vagy?</label>
+                <legend>1. kérdés</legend>
+                <label for="robot">Milyen zenéket szeretsz ?</label>
                 <br>
-                <label for="igen">Igen</label>
-                <input type="radio">
+                <label for="Rock">rock</label>
+                <input type="checkbox">
                 <br>
-                <label for="nem">Nem</label>
-                <input type="radio">
+                <label for="klasszikus">classic</label>
+                <input type="checkbox">
                 <br>
-                <label for="talan">Talán</label>
-                <input type="radio">
-            </fieldset>
+                <label for="pop">pop</label>
+                <input type="checkbox">
+                <br>
+                <label for="Mást">Mást:</label>
+                <input type="text">
 
+            </fieldset>
+                <br>
+            <fieldset>
+                <legend>2. kérdés</legend>  
+                <label for="robot">Milyen filmeket szeretsz ?</label>
+                <br>
+                <input type="text">
+            </fieldset>
+                <br>
             <fieldset>
                 <legend>3. kérdés</legend>
-                <label for="robot">Robot vagy?</label>
+                <label for="robot">Mi az élet értelme ?</label>
+                <br>
+                <label for="igen">Ez most honnan tudjam ?</label>
+                <input type="checkbox">
+                <br>
+                <label for="nem">A matek</label>
+                <input type="checkbox">
+                <br>
+                <label for="talan">Más:</label>
+                <input type="text">
+            </fieldset>
+                <br>
+            <fieldset>
+                <legend>4. kérdés</legend>
+                <label for="robot">Szereted a tejet ?</label>
                 <br>
                 <label for="igen">Igen</label>
-                <input type="radio">
+                <input type="checkbox">
                 <br>
                 <label for="nem">Nem</label>
-                <input type="radio">
+                <input type="checkbox">
                 <br>
-                <label for="talan">Talán</label>
-                <input type="radio">
+                <label for="talan">Én nagyon szeretem a tejet</label>
+                <input type="checkbox">
             </fieldset>
+                <br>
+            <fieldset>
+                <legend>5. kérdés</legend>
+                <label for="robot">Hány éves vagy?</label>
+                <br>
+                <label for="igen">Elég idős ahhoz hogy fent legyek korlátozások nélkül az interneten</label>
+                <input type="checkbox">
+                <br>
+                <label for="nem">Túl fiatal még hogy egeret fogjak a kezembe</label>
+                <input type="checkbox">
+                <br>
+                <label for="talan">90 és a halál közt</label>
+                <input type="checkbox">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>6. kérdés</legend>
+                <label for="robot">Mikor született Petőfi Sándor?</label>
+                <br>
+                <label for="igen">Nem figyeltem magyar órákon, bocsi</label>
+                <input type="checkbox">
+                <br>
+                <label for="nem">Ezt tudom de nem mondom meg</label>
+                <input type="checkbox">
+                <br>
+                <label for="talan">Megmondom:</label>
+                <input type="date">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>7. kérdés</legend>
+                <label for="robot">Bízol az oldalba ?</label>
+                <br>
+                <label for="igen">Igen</label>
+                <input type="checkbox">
+                <br>
+                <label for="nem">Nem</label>
+                <input type="checkbox">
+                <br>
+                <label for="talan">Annyira hogy megadom a telefon számomat:</label>
+                <input type="tel" placeholder="+36123456">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>7. kérdés</legend>
+                <label for="robot">Van e-mail címed ?</label>
+                <br>
+                <label for="igen">Van, de nem fogom megadni</label>
+                <input type="checkbox">
+                <br>
+                <label for="nem">Az meg micsoda ?</label>
+                <input type="checkbox">
+                <br>
+                <label for="talan"></label>Van és meg is adom mert jó fej vagyok:</label>
+                <input type="email" placeholder="blabla@blabla.hu">
+            </fieldset>
+            <br>
+            <input type="button" value="Küldés">
         </article>
         <footer>
             <nav>
