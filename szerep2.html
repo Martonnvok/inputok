@@ -2,16 +2,18 @@
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Buli keresés űrlap">
+    <meta name="keywords" content="Buli, Személy, Idő">
+    <meta name="author" content="Piniel Gábor, Petrovai Asztrik">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rajdhani">
     <link rel="stylesheet" href="style.css">
-    <title>szabad</title>
+    <title>Piniel Gábor, Petrovai Asztrik</title>
 </head>
 <body>
     <main>
         <header>
-            <h1>CÍM</h1>
+            <h1>Buli helyszíne és ideje.</h1>
         </header>
         <nav>
             <ul>
@@ -23,99 +25,82 @@
             </ul>
         </nav>
         <article>
-            <h2>Kérdőív3</h2>
+            <h2>Buli</h2>
+            <!-- Piniel Gábor -->
             <fieldset>
-                <legend>Kérlek szánj időt a kérdőívünkre</legend>
-                <label for="vNev">Vezetéknév: </label>
-                <input type="text" id="vNev" name="vezetekNev"  placeholder="Családneved"> <br>
-                <label for="kNev">keresztknév: </label>
-                <input type="text" id="kNev" name="keresztNev" placeholder="Keresztneved"> 
+                <legend>Milyen bulira szeretnél menni?</legend>  
+                <label for="robot">(Kültéri, Beltéri, Kültéri és beltéri)</label>
                 <br>
-                <label for="start">Nem: </label>
+                <label for="igen">Kültéri</label>
+                <input type="radio" name="helyszín">
                 <br>
-                <label for="ferfi">Férfi: </label>
-                <input type="radio" >
+                <label for="nem">Beltéri</label>
+                <input type="radio" name="helyszín">
                 <br>
-                <label for="no">Nő: </label>
-                <input type="radio"  >
-                <br>
-                <label for="szul">Születési időt: </label>
-                <input type="date">
-                <br>
-                <label for="email">Email: </label>
-                <input type="email">
+                <label for="talan">Kültéri és beltéri</label>
+                <input type="radio" name="helyszín">
             </fieldset>
 
             <fieldset>
-                <legend>1. kérdés</legend>
-                <label for="robot">Robot vagy?</label>
+                <legend>Mikor mennél erre a bulira?</legend>
+                <label for="robot">(Ma, Hét múlva, Később)</label>
                 <br>
-                <label for="igen">Igen</label>
-                <input type="radio">
+                <label for="igen">Ma</label>
+                <input type="radio" name="datum">
                 <br>
-                <label for="nem">Nem</label>
-                <input type="radio">
+                <label for="nem">Hét múlva</label>
+                <input type="radio" name="datum">
                 <br>
-                <label for="talan">Talán</label>
-                <input type="radio">
-
-            </fieldset>
-
-            <fieldset>
-                <legend>2. kérdés</legend>  
-                <label for="robot">Robot vagy?</label>
-                <br>
-                <label for="igen">Igen</label>
-                <input type="radio">
-                <br>
-                <label for="nem">Nem</label>
-                <input type="radio">
-                <br>
-                <label for="talan">Talán</label>
-                <input type="radio">
-            </fieldset>
-
-            <fieldset>
-                <legend>3. kérdés</legend>
-                <label for="robot">Robot vagy?</label>
-                <br>
-                <label for="igen">Igen</label>
-                <input type="radio">
-                <br>
-                <label for="nem">Nem</label>
-                <input type="radio">
-                <br>
-                <label for="talan">Talán</label>
-                <input type="radio">
+                <label for="talan">Később</label>
+                <input type="radio" name="datum">
             </fieldset>
             
             <fieldset>
-                <legend>3. kérdés</legend>
-                <label for="robot">Robot vagy?</label>
+                <legend>Hány órakor kezdődő bulira mennél?</legend>
+                <label for="robot">(Délután, Este, Vagyok mindig)</label>
                 <br>
-                <label for="igen">Igen</label>
-                <input type="radio">
+                <label for="igen">Este</label>
+                <input type="radio" name="ido">
                 <br>
-                <label for="nem">Nem</label>
-                <input type="radio">
+                <label for="nem">Délután</label>
+                <input type="radio" name="ido">
                 <br>
-                <label for="talan">Talán</label>
-                <input type="radio">
+                <label for="talan">Vagyok mindig</label>
+                <input type="radio" name="ido">
             </fieldset>
 
             <fieldset>
-                <legend>3. kérdés</legend>
-                <label for="robot">Robot vagy?</label>
+                <legend>Hányan mennétek bulizni?</legend>
+                <label for="robot">(Egyedül, Ketten, Többen)</label>
                 <br>
-                <label for="igen">Igen</label>
-                <input type="radio">
+                <label for="igen">Egyedül</label>
+                <input type="radio" name="szmelyek">
                 <br>
-                <label for="nem">Nem</label>
-                <input type="radio">
+                <label for="nem">Ketten</label>
+                <input type="radio" name="szmelyek">
                 <br>
-                <label for="talan">Talán</label>
-                <input type="radio">
+                <label for="talan">Többen</label>
+                <input type="radio" name="szmelyek">
             </fieldset>
+            <!-- Piniel Gábor -->
+            <!-- Petrovai Asztrik -->
+            <fieldset>
+                <legend>*Mellék kérdések:</legend>
+                <label for="robot">Ha az előző kérdések nem voltak ellégé informatívak kérem tötse ki itt:</label>
+                <br>
+                <textarea cols=40 rows=6></textarea>
+                <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>*Visszajelzés:</legend>
+                <label for="robot">Ha visszajelzést kívánsz küldeni itt töltsd ki:</label>
+                <br>
+                <textarea cols=40 rows=6></textarea>
+                <br>
+            </fieldset>
+            <input class="button" type='button' value='Küldés' onclick="visszajelzes()">
+            <!-- Petrovai Asztrik -->
         </article>
         <footer>
             <nav>
@@ -130,6 +115,13 @@
             <p>&copy;Nem lopott weblap</p>     
         </footer>
     </main>
-    
+   <!-- Petrovai Asztrik --> 
+<script>
+function visszajelzes() {
+  alert("Köszönjük, hogy kitöltötte!");
+}
+</script>
+<!-- Petrovai Asztrik -->
+
 </body>
 </html>
