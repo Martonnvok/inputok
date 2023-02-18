@@ -133,6 +133,43 @@
                 <input type="email" placeholder="blabla@blabla.hu">
             </fieldset>
             <br>
+            <fieldset>
+                <legend>8.kérdés</legend>
+                <label for="robot">Mi a teljes neved?</label>
+                <br>
+                <form action="/action_page.php">
+                    <label for="fname">Vezetékneved:</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="lname">Keresztneved:</label>
+                    <input type="text" id="lname" name="lname">
+                  </form>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>9.kérdés</legend>
+                <label for="robot">Mennyi az idő?</label>
+                <input type="time" id="myTime" value="22:15:00">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>10.kérdés</legend>
+                <label for="robot">Mennyire vagy fáradt?</label>
+                <input type="range" id="myRange" value="90">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>11.kérdés</legend>
+                Mi a kedvenc színed? <input type="color" id="myColor">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>+1</legend>
+                <form action="/action_page.php">
+                <label for="myfile">Küldj képet magadról!:</label>
+                <input type="file" id="myfile" name="myfile">
+              </form>
+            </fieldset>    
+            <br>
             <input type="button" value="Küldés">
         </article>
         <footer>
