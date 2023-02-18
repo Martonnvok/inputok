@@ -29,7 +29,7 @@ nav a{
 }
 nav a:hover{
     color: black;
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.541));
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.540));
     border-bottom: 1px solid white ;
 }
 article {
