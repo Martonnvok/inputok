@@ -94,6 +94,9 @@ summary span {
 img {
     width: 300px;
 }
+footer{
+    text-align: center;
+}
 @media screen and (max-width: 1000px) {
     .pcnav {
         display: none;
