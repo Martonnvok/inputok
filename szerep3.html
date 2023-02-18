@@ -6,116 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rajdhani">
     <link rel="stylesheet" href="style.css">
-    <title>szabad</title>
+    <title>Papp Nikoletta, Mohos Tímea</title>
 </head>
 <body>
     <main>
         <header>
-            <h1>CÍM4</h1>
+            <h1>Legyél Te is a csapatunk tagja!</h1>
         </header>
         <nav>
             <ul>
                 <li><a href="index.html">Főoldal</a></li>
                 <li><a href="szerep1.html">Quiz kérdések</a></li>
                 <li><a href="szerep2.html">2.oldal</a></li>
-                <li><a href="szerep3.html">3.oldal</a></li>
+                <li><a href="szerep3.html">Dolgozz Nálunk!</a></li>
                 <li><a href="szerep4.html">4.oldal</a></li>
             </ul>
         </nav>
         <article>
-            <h2>Kérdőív</h2>
+           
+            <h2>Jelentkezési lap</h2>
+            <p>Jól érzed magad a pörgés közepén, szereted, ha a Te kezedben van az irányítás? Úgy érzed verhetetlen vagy egy igényes parti, vagy egy feledhetetlen buli megszervezésében?
+                Ha mindez igaz rád, illetve vágysz egy ilyen munkahelyre, jelentkezz Te is csapatunkba!
+            </p>
             <fieldset>
-                <legend>Kérlek szánj időt a kérdőívünkre</legend>
-                <label for="vNev">Vezetéknév: </label>
-                <input type="text" id="vNev" name="vezetekNev"  placeholder="Családneved"> <br>
-                <label for="kNev">keresztknév: </label>
-                <input type="text" id="kNev" name="keresztNev" placeholder="Keresztneved"> 
+                <p>Kérlek figyelmesen töltsd ki, Valós adatokat adj meg!</p>
+                <legend>Személyes adatok</legend>
+                
+                <form>
+                    <label for="vNev">Vezetéknév: </label><br>
+                    <input type="text" id="vNev" name="vezetekNev" value="Nagy"><br>
+                    <label for="kNev">Keresztknév: </label><br>
+                    <input type="text" id="kNev" name="keresztNev" value="Ádám">
+                  </form>
                 <br>
-                <label for="start">Nem: </label>
+                <p>Add meg a nemed:</p>
+                <form>
+                    <input type="radio" id="no" name="neme" value="no">
+                    <label for="no">Nő</label><br>
+                    <input type="radio" id="ferfi" name="neme" value="ferfi">
+                    <label for="ferfi">Férfi</label><br>
+                    <input type="radio" id="egyeb" name="neme" value="egyeb">
+                    <label for="egyeb">Egyéb</label>
+                    </form> 
                 <br>
-                <label for="ferfi">Férfi: </label>
-                <input type="radio" >
+                <form>
+                    <label for="birthday">Születési dátum:</label>
+                    <input type="date" id="birthday" name="birthday">
+                  </form>
                 <br>
-                <label for="no">Nő: </label>
-                <input type="radio"  >
-                <br>
-                <label for="szul">Születési időt: </label>
-                <input type="date">
-                <br>
-                <label for="email">Email: </label>
-                <input type="email">
+                <form>
+                    <label for="lhely">Lakcím:</label>
+                    <input type="lhely" id="lhely" name="lhely"><br><br>
+                    <label for="country_code">Irányítószám</label>
+                    <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}" title="Négy számjegyű kód"><br><br>
+                    <label for="ltelep">Település, utca, házszám</label>
+                    <input type="ltelep" id="ltelep" name="ltelep"><br><br>
+                  </form>
             </fieldset>
+            <fieldset>
+                <legend>Elérhetőség</legend>  
+                <form>
+                    <label for="lhely">Telefonszám:</label>
+                    <input type="lhely" id="lhely" name="lhely"><br><br>
+                    <label for="ltelep">Email</label>
+                    <input type="ltelep" id="ltelep" name="ltelep"><br><br>
+                  </form>
+            </fieldset>
+            <fieldset>
+                <legend>Iskolai végzettség</legend>
+                <p>Kérlek jelöld be, azokat az iskolai végzettségeket, amivel jelentkezel!</p>
+                <form >
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Általános iskola</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Gimnázium, Érettségi</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> Szakképesítés, Szakbizonyítvány (szervezés)</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Egyetem</label><br><br>
+                    
+                  </form> 
 
-            <fieldset>
-                <legend>1. kérdés</legend>
-                <label for="robot">Robot vagy?</label>
-                <br>
-                <label for="igen">Igen</label>
-                <input type="radio">
-                <br>
-                <label for="nem">Nem</label>
-                <input type="radio">
-                <br>
-                <label for="talan">Talán</label>
-                <input type="radio">
-
             </fieldset>
-
             <fieldset>
-                <legend>2. kérdés</legend>  
-                <label for="robot">Robot vagy?</label>
-                <br>
-                <label for="igen">Igen</label>
-                <input type="radio">
-                <br>
-                <label for="nem">Nem</label>
-                <input type="radio">
-                <br>
-                <label for="talan">Talán</label>
-                <input type="radio">
-            </fieldset>
-
-            <fieldset>
-                <legend>3. kérdés</legend>
-                <label for="robot">Robot vagy?</label>
-                <br>
-                <label for="igen">Igen</label>
-                <input type="radio">
-                <br>
-                <label for="nem">Nem</label>
-                <input type="radio">
-                <br>
-                <label for="talan">Talán</label>
-                <input type="radio">
-            </fieldset>
-            
-            <fieldset>
-                <legend>3. kérdés</legend>
-                <label for="robot">Robot vagy?</label>
-                <br>
-                <label for="igen">Igen</label>
-                <input type="radio">
-                <br>
-                <label for="nem">Nem</label>
-                <input type="radio">
-                <br>
-                <label for="talan">Talán</label>
-                <input type="radio">
-            </fieldset>
-
-            <fieldset>
-                <legend>3. kérdés</legend>
-                <label for="robot">Robot vagy?</label>
-                <br>
-                <label for="igen">Igen</label>
-                <input type="radio">
-                <br>
-                <label for="nem">Nem</label>
-                <input type="radio">
-                <br>
-                <label for="talan">Talán</label>
-                <input type="radio">
-            </fieldset>
+                <legend>Önéletrajz</legend>
+                <p>Kérlek töltsd fel fényképes önéletrajzodat a jelentkezéshez:</p>
+                <form action="/action_page.php">
+                    <input type="file" id="myFile" name="filename">
+                    <input type="submit">
+                  </form>
         </article>
         <footer>
             <nav>
@@ -123,11 +102,11 @@
                     <li><a href="index.html">Főoldal</a></li>
                     <li><a href="szerep1.html">Quiz kérdések</a></li>
                     <li><a href="szerep2.html">2.oldal</a></li>
-                    <li><a href="szerep3.html">3.oldal</a></li>
+                    <li><a href="szerep3.html">Dolgozz Nálunk!</a></li>
                     <li><a href="szerep4.html">4.oldal</a></li>
                 </ul>
             </nav>
-            <p>&copy;Nem lopott weblap</p>     
+            <p>&copy;Minden jog fenntartva!</p>     
         </footer>
     </main>
     
