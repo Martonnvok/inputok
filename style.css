@@ -1,4 +1,6 @@
-/*Alap beállítások, módosíthatóak*/
+* {
+    box-sizing: border-box;
+}
 body{
     font-family: Rajdhani;
     color: white;
@@ -33,11 +35,16 @@ nav a:hover{
 article {
     width: 60%;
     margin: auto;
+    padding-bottom: 10px;
 }
-fieldset {
+fieldset{
     background-color: rgb(70, 70, 70);
     border-radius: 20px;
     border: none;
+    flex-direction: column;
+    display: flex;
+}
+form {
     flex-direction: column;
     display: flex;
 }
@@ -56,10 +63,62 @@ input:hover {
 }
 .button {
     margin: 20px;
+    align-self: flex-end;
     border: none;
     transition: all .3s ease-in-out;
 }
 .button:hover {
     background-color: black;
     color: whitesmoke;
+}
+.mobilenav {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(37, 37, 37, 0.950);
+}
+details {
+    display: none;
+    position: fixed;
+}
+summary {
+    list-style-type: none;
+}
+summary span {
+    padding-left: 20px;
+}
+.galery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+img {
+    width: 300px;
+}
+@media screen and (max-width: 1000px) {
+    .pcnav {
+        display: none;
+    }
+    details {
+        display: block;
+    }
+    nav ul {
+        grid-template-columns: 1fr; 
+    }
+    li {
+        padding: 10px;
+    }
+    nav a {
+        padding: 0;
+    }
+    nav a:hover {
+        padding: 0;
+        background: none;
+        border: none;
+    }
+    article {
+        width: 80%;
+    }
+    input {
+        width: 70%;
+    }
 }
